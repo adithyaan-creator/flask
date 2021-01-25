@@ -23,7 +23,7 @@ class Haystack_HSBC:
     #print_answers(prediction, details="medium")
     return haystack_answer
 
-haystack_obj = Haystack_HSBC("data", "my_model")
+haystack_obj = Haystack_HSBC("data", "deepset/roberta-base-squad2")
 
 @app.route("/answers", methods=["GET"])
 def answers():
